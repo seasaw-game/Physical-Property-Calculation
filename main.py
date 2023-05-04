@@ -63,11 +63,19 @@ thermophysic_list["Viscosity[Pa-s]"] = thermophysic_list["Temperature[K]"] * 0.0
 thermophysic_list
 "---"
 
-st.line_chart(thermophysic_list)
+# st.line_chart(thermophysic_list)
 
-plt.plot(thermophysic_list["Temperature[C]"],thermophysic_list["Density[kg/m3]"])
-plt.show()
-
-fig, ax = plt.subplots()
-ax.plot(thermophysic_list["Temperature[C]"],thermophysic_list["Density[kg/m3]"])
+fig = plt.figure(figsize=(10,20))
+ax1 = fig.add_subplot(2, 2, 1)
+ax2 = fig.add_subplot(2, 2, 2)
+ax3 = fig.add_subplot(2, 2, 3)
+ax4 = fig.add_subplot(2, 2, 4)
+ax1.set_xlim(temp_min, temp_max)
+ax2.set_xlim(temp_min, temp_max)
+ax3.set_xlim(temp_min, temp_max)
+ax4.set_xlim(temp_min, temp_max)
+ax1.plot(thermophysic_list["Temperature[C]"],thermophysic_list["Density[kg/m3]"])
+ax2.plot(thermophysic_list["Temperature[C]"],thermophysic_list["Thermal Conductivity[W/m-k]"])
+ax3.plot(thermophysic_list["Temperature[C]"],thermophysic_list["Specific Heat[J/kg-s]"])
+ax4.plot(thermophysic_list["Temperature[C]"],thermophysic_list["Viscosity[Pa-s]"])
 fig
