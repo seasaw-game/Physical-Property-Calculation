@@ -2,6 +2,9 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import seaborn as sns
+sns.set()
+sns.set_style("whitegrid")
 
 ### Composition
 COMPOSE_LIST = ["h2","o2","n2","h2o","ch4","c2h6","c3h8","c4h10"]
