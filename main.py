@@ -87,3 +87,4 @@ ax2.plot(thermophysic_list["Temperature[C]"],thermophysic_list["Thermal Conducti
 ax3.plot(thermophysic_list["Temperature[C]"],thermophysic_list["Specific Heat[J/kg-s]"])
 ax4.plot(thermophysic_list["Temperature[C]"],thermophysic_list["Viscosity[Pa-s]"])
 fig
+"---"
