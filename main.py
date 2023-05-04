@@ -20,7 +20,7 @@ PROPERTY_LIST = ["density","thermal_conductivity","specific_heat","viscosity"]
 
 # Page title and subtitle
 st.title("ガス物性計算アプリ")
-st.text("更新日：2023/4/16")
+st.text("更新日：2023/05/04")
 "---"
 
 zero_data = np.zeros(shape=(1,len(COMPOSE_LIST)))
