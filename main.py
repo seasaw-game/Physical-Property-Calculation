@@ -60,5 +60,11 @@ thermophysic_list["Viscosity[Pa-s]"] = thermophysic_list["Temperature[K]"] * 0.0
 thermophysic_list
 "---"
 
+st.line_chart(thermophysic_list)
+
 plt.plot(thermophysic_list["Temperature[C]"],thermophysic_list["Density[kg/m3]"])
 plt.show()
+
+fig, ax = plt.subplots()
+ax.plot(thermophysic_list["Temperature[C]"],thermophysic_list["Density[kg/m3]"])
+fig
